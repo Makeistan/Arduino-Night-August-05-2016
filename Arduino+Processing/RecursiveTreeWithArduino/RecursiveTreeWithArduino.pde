@@ -18,11 +18,11 @@ void setup()
   size(200,200);
   smooth();
   println(Serial.list()); // List all the available serial ports:
-  arduino = new Arduino(this, Arduino.list()[0], 57600);
+  arduino = new Arduino(this, "COM20", 57600);
 }
 
-void draw() {
-
+void draw() 
+{
   background(0);
   frameRate(30);
   stroke(255);
